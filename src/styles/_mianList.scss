@@ -1,0 +1,55 @@
+.main-list {
+  width: 40%;
+  height: 70vh;
+  border-right: 1px solid #edf0f4;
+  display: flex;  
+
+  &__sort {
+    color: #bbc3cf;
+    transition: 0.4s;
+    display: flex;
+
+    &:hover {
+      color: #959ba5;
+    }
+  }
+
+  &__with-data {
+    cursor: pointer;
+    margin: 10px;
+  }
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  &__segment {
+    margin-top: 0 !important;
+  }
+
+  &__small-container {
+    height: 50vh;
+    width: 100%;
+    overflow-y: auto;
+  }
+
+  &__no-data {
+    margin: auto;
+  }
+}
+
+.error {
+  color: red;
+}
+
+@media screen and (max-width: 550px) {
+  .main-list {
+    &__sort {
+      height: 5vh;
+      font-size: 4vw !important;
+    }
+  }
+}

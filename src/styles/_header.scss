@@ -1,0 +1,14 @@
+.header {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    border-bottom: 1px solid #DAE4F2;
+    background-color: #FFFFFF;
+
+    &__activeItem {
+        position: relative;
+        margin-right: 50px;
+    }
+}

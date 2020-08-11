@@ -1,24 +1,34 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { Image } from "semantic-ui-react";
+import waider from "./images/dart_waider.jpg";
+import SideBar from "./components/SideBar";
+import Header from "./components/Header";
+import MainList from "./components/MainList";
+import Description from "./components/Description";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <SideBar />
+      <div className="App__mainContainer">
+        <Header />
+        <div className="App__containerForLists">
+          <MainList />
+          <Description />
+        </div>
+      </div>
+      <Image
+        src={waider}
+        size="medium"
+        rounded
+        style={{ 
+          position: "absolute",
+          right: 0,
+          bottom: 0,
+          height: '14vh',
+          width: 'auto',
+        }}
+      />
     </div>
   );
 }

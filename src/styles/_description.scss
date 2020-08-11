@@ -1,0 +1,12 @@
+.description {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 60%;
+    height: 70vh;
+    overflow-y: auto;
+
+    &__component {
+        width: 100%
+    }
+}

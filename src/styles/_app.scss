@@ -1,0 +1,21 @@
+.App {
+    display: flex;
+    background-color: #F9FAFC;
+    
+    &__mainContainer {
+        width: 100%;
+    }
+
+
+    &__containerForLists {
+        display: flex;
+        margin: 30px auto;
+        width: 90%;
+        height: 70vh;
+        // margin-bottom: 70px;
+        background-color: #FFFFFF;
+        box-sizing: border-box;
+        box-shadow: 0px 0px 30px rgba(153, 163, 174, 0.06);
+        border-radius: 4px;
+    }
+}
